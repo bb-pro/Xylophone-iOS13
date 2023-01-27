@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.15"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,13 +19,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="dvW-ZB-0JS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="dvW-ZB-0JS">
+                                <rect key="frame" x="0.0" y="-20" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppBreweryLogo" translatesAutoresizingMaskIntoConstraints="NO" id="z16-yo-3fe">
-                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Bektemur" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z16-yo-3fe">
+                                <rect key="frame" x="0.0" y="0.0" width="376" height="636"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="MrV-El-qqN"/>
                                     <constraint firstAttribute="height" constant="300" id="WQj-h3-eCb"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="667" id="btb-F0-kAb"/>
                                     <constraint firstAttribute="width" constant="300" id="iB2-CF-J86"/>
                                 </constraints>
                             </imageView>
@@ -34,7 +38,9 @@
                             <constraint firstItem="dvW-ZB-0JS" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Eq8-qs-azj"/>
                             <constraint firstAttribute="trailing" secondItem="dvW-ZB-0JS" secondAttribute="trailing" id="PNx-Wg-ot4"/>
                             <constraint firstAttribute="bottom" secondItem="dvW-ZB-0JS" secondAttribute="bottom" id="ZGb-l3-zLm"/>
+                            <constraint firstItem="z16-yo-3fe" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="azk-cQ-GTN"/>
                             <constraint firstItem="z16-yo-3fe" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="bfw-Oj-Qal"/>
+                            <constraint firstItem="z16-yo-3fe" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="tBg-JB-5vn"/>
                             <constraint firstItem="z16-yo-3fe" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xKv-Wh-Yxd"/>
                             <constraint firstItem="dvW-ZB-0JS" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="zvz-9i-v8j"/>
                         </constraints>
@@ -46,7 +52,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AppBreweryLogo" width="190" height="59"/>
+        <image name="Bektemur" width="341" height="341"/>
         <image name="background" width="581.5" height="876.5"/>
     </resources>
 </document>
